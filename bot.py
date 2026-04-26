@@ -75,7 +75,8 @@ async def done(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main function
 def main():
-    TOKEN = "YOUR_BOT_TOKEN_HERE"
+    import os
+TOKEN = os.getenv("simple_pdf_creater_bot")
 
     app = ApplicationBuilder().token(TOKEN).build()
 
